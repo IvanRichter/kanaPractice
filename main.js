@@ -253,7 +253,7 @@ function turn() {
 }
 
 function end() {
-    //the last remaining character is considered as anwsered correctly
+    //the last remaining character is considered as answered correctly
     score++;
     correctCount++;
     totalCount++;
