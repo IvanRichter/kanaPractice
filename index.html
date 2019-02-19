@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Kana Practice</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="mainDiv">
+            <p class="scoreDisplay">Score: 0</p>
+            <p class="accuracyDisplay">Accuracy: 0/0 (100%)</p>
+            <table>
+                <td class="mainDisplay"></td>
+            </table>
+
+            <div class="answerDiv">
+                <button onclick="answer(this)" class="answerButton"></button>
+                <button onclick="answer(this)" class="answerButton"></button>
+                <button onclick="answer(this)" class="answerButton"></button>
+                <button onclick="answer(this)" class="answerButton"></button>
+
+                <button onclick="start()" class="startButton">Start</button>
+            </div>
+
+            <div class="options">
+                <label
+                    ><input
+                        type="checkbox"
+                        class="checkboxLoop"
+                        checked
+                    />Repeat characters?</label
+                >
+                <input
+                    type="button"
+                    class="selectButton selectHiragana"
+                    onclick="selectKana('hiragana')"
+                    value="Select all of hiragana"
+                />
+                <input
+                    type="button"
+                    class="selectButton selectKatakana"
+                    onclick="selectKana('katakana')"
+                    value="Select all of katakana"
+                />
+
+                <p>Select individual characters below</p>
+            </div>
+            <div class="tableDiv"></div>
+        </div>
+
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>
