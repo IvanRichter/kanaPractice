@@ -126,6 +126,7 @@ body {
 }
 
 .selectButton {
+    -webkit-appearance: none;
     margin: 2%;
     height: 30px;
     width: 90%;
