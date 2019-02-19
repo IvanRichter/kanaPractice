@@ -3,6 +3,8 @@ html {
 }
 body {
     background: linear-gradient(to top, #1e689a, #7ec8e8) fixed;
+    min-height: 100%;
+    margin: 0;
 }
 
 .kanaTable {
